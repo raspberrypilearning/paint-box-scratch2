@@ -1,14 +1,8 @@
-# paint-box-scratch2
+# Binary Hero
+In this resource, you will make a game in which you play the notes of a song as they scroll down the stage.
 
-![paint-box-scratch2](banner.png)
+This repository contains the content for the Binary Hero Raspberry Pi project. This project can be viewed at:
 
-Find the project online at [projects.raspberrypi.org/en/projects/paint-box-scratch2](https://projects.raspberrypi.org/en/projects/paint-box-scratch2)
+https://projects.raspberrypi.org/en/projects/paint-box-scratch2
 
-## Resources
-For solutions and project materials, see [en/resources](https://github.com/raspberrypilearning/paint-box-scratch2/tree/master/en/resources)
-
-## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Licence
- See [LICENSE.md](LICENSE.md)
+See [LICENCE.md](LICENCE.md) for the project licence, and [CONTRIBUTING.md](CONTRIBUTING.md) for guidance on how to contribute.
