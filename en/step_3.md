@@ -32,10 +32,7 @@ Rename the new sprites so that they are called 'blue' and 'green'
 Add some code to the 'green' sprite so that when this sprite is clicked, it `broadcasts`{:class="blockevents"} the message "green".
 
 ![green square](images/green_square.png)
-```blocks
-when this sprite clicked
-broadcast [green v]
-```
+![blocks_1545215454_9892426](images/blocks_1545215454_9892426.png)
 
 [[[generic-scratch-broadcast-message]]]
 --- /task ---
@@ -47,11 +44,7 @@ Switch to your pencil sprite. Add some code so that when this sprite receives th
 
 ![pencil](images/pencil.png)
 
-```blocks
-when I receive [green v]
-switch costume to [pencil-green v]
-set pen color to [#00CC44]
-```
+![blocks_1545215456_0834806](images/blocks_1545215456_0834806.png)
 
 To set the pencil to colour to green, click the coloured square in the `set pen color`{:class="blockpen"} block, and then click on the green square sprite.
 --- /task ---
@@ -62,37 +55,18 @@ Then to a similar thing so that you can switch the pencil colour to blue.
 Click on the blue square sprite and add this code:
 
 ![blue_square](images/blue_square.png)
-```blocks
-when this sprite clicked
-broadcast [blue v]
-```
+![blocks_1545215457_1853302](images/blocks_1545215457_1853302.png)
 
 Then click on the pencil sprite and add this code:
 ![pencil](images/pencil.png)
-```blocks
-when I receive [blue v]
-switch costume to [pencil-blue v]
-set pen color to [#0000ff]
-```
+![blocks_1545215458_3099954](images/blocks_1545215458_3099954.png)
 --- /task --- 
 
 --- task ---
 Finally, add this code to tell the pencil sprite which colour to start with, and to make sure that the screen is clear when your prom starts.
 
 ![pencil](images/pencil.png)
-```blocks
-when flag clicked
-+clear
-+switch costume to [pencil-blue v]
-+set pen color to [#0035FF]
-forever
-  go to [mouse pointer v]
-if <mouse down?> then
-  pen down
-  else
-  pen up
-end
-```
+![blocks_1545215459_4364326](images/blocks_1545215459_4364326.png)
 --- /task ---
 
 If you prefer, you can start with a different colour pencil.
