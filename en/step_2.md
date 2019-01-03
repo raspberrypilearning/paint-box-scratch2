@@ -5,7 +5,7 @@ Start by making a pencil that you can use to draw on the Stage.
 --- task ---
 Open the 'Paint box' Scratch [starter project](http://rpf.io/p/en/paint-box-scratch2-go){:target="_blank"} in the offline editor.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff)
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}
 
 In the starter project, you should see pencil and eraser sprites:
 
