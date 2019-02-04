@@ -17,7 +17,12 @@ In the starter project, you should see pencil and eraser sprites:
 Add some code to the pencil sprite to make the sprite follow the mouse pointer `forever`{:class="blockcontrol"} so that you can draw:
 
 ![pencil](images/pencil.png)
-![blocks_1545215451_99667](images/blocks_1545215451_99667.png)
+```blocks
+when flag clicked
+forever
+  go to [mouse pointer v]
+end
+```
 
 --- /task ---
 
@@ -30,7 +35,16 @@ Next, make your pencil only draw `if`{:class="blockcontrol"} the mouse button is
 --- task ---
 Add this code to your pencil sprite:
 
-![blocks_1545215453_8583968](images/blocks_1545215453_8583968.png)
+```blocks
+when flag clicked
+forever
+  go to [mouse pointer v]
++ if <mouse down?> then
+  pen down
+  else
+  pen up
+end
+```
 --- /task ---
 
 --- task ---

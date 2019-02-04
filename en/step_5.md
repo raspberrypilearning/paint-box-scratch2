@@ -14,7 +14,10 @@ Add the 'X-block' sprite from the library's letters section. Colour the sprite's
 Add code to the 'X-block' sprite to clear the Stage when the sprite clicked.
 
 ![cross](images/cross.png)
-![blocks_1545215460_5247564](images/blocks_1545215460_5247564.png)
+```blocks
+when this sprite clicked
+clear
+```
 --- /task ---
 
 You don't need to use a `broadcast`{:class="blockevents"} to clear the Stage, because the `clear`{:class="blockpen"} block does that job.
@@ -35,7 +38,10 @@ Right-click on this eraser sprite and then click on **show**. Here is how your S
 Add code to the eraser sprite to send an `'eraser' broadcast`{:class="blockevents"} when the eraser sprite is clicked.
 
 ![eraser](images/eraser.png)
-![blocks_1545215461_6310802](images/blocks_1545215461_6310802.png)
+```blocks
+when this sprite clicked
+broadcast [eraser v]
+```
 --- /task ---
 
 When the pencil sprite receives the 'eraser' message, it should switch its costume to the eraser and switch the pen colour to white, which is the same colour as the Stage!
@@ -52,11 +58,20 @@ Add some code to the pencil sprite:
 --- /hint ---
 --- hint ---
 Here are all the blocks you need:
-![blocks_1545215462_7428753](images/blocks_1545215462_7428753.png)
+```blocks
+set pen color to [#FFFFFF]
+when I receive [eraser v]
+
+switch costume to [eraser v]
+```
 --- /hint ---
 --- hint ---
 Here is what the code should look like:
-![blocks_1545215463_9098535](images/blocks_1545215463_9098535.png)
+```blocks
+when I receive [eraser v]
+switch costume to [eraser v]
+set pen color to [#FFFFFF]
+```
 --- /hint ---
 --- /hints ---
 --- /task ---
@@ -75,7 +90,19 @@ There's one more problem with the pencil: you can draw anywhere on the Stage, in
 To fix this, change the code so that the pen is only down if the mouse is clicked __and__ the `y` position of the mouse pointer is greater than `-120`:
 
 ![pencil](images/pencil.png)
-![blocks_1545215465_0457473](images/blocks_1545215465_0457473.png)
+```blocks
+when flag clicked
+clear
+switch costume to [pencil-blue v]
+set pen color to [#0035FF]
+forever
+  go to [mouse pointer v]
++if <<mouse down?> and <(mouse y) > [120]>> then 
+  pen down
+  else
+  pen up
+end
+```
 --- /task ---
 
 --- task ---
